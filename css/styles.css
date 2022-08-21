@@ -1,0 +1,91 @@
+h1 {
+
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-style: wavy;
+    color: rgb(252, 84, 18);
+    text-shadow: 2px 2px 4px #000000
+}
+
+body {
+    height: 60%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body nav,
+h1 {
+    margin-left: 2%;
+}
+
+#submitCoins {
+    background-color: rgb(101, 199, 101);
+    color: whitesmoke;
+    border-radius: 6px;
+}
+
+#submitCoins:hover {
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+}
+
+#exit {
+    background-color: rgb(231, 112, 112);
+    color: whitesmoke;
+    color: whitesmoke;
+    border-radius: 6px;
+    width: 14%;
+}
+
+#exit:hover {
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    width: 14%;
+}
+
+#section {
+    display: frex;
+    margin: 10px;
+    width: 1000px;
+    height: 299px;
+}
+
+/*caja interior de la sección, que contendrá 3 ítems dispuestos en horizontal*/
+#section ul {
+    display: flex;
+    align-items: inline;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    padding: 1px;
+    background-color: rgb(249, 253, 253);
+}
+
+#section ul .box {
+    list-style-position: inside;
+    border-radius: 20px;
+    margin: auto;
+    width: 221px;
+    height: 253px;
+    padding: 1rem;
+    border: 5px rgb(248, 39, 11) solid;
+    background-color: #eeb447;
+}
+
+#section ul div img {
+    position: relative;
+    margin: auto;
+    width: 200px;
+}
+
+.palanca {
+    border: none;
+    list-style-position: inside;
+    width: 221px;
+    height: 253px;
+}
+
+#palanca img {
+    padding: 18px;
+}
