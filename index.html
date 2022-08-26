@@ -16,7 +16,7 @@
     <!--div top1 -->
     
           
-   <div class="container-fluid">
+   <div class="container-fluid" id="all">
         <div class="row">
             <div class="col">
         <h1><b>T&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;P&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;S</b>
@@ -30,9 +30,10 @@
             <div class="col-9">
         <!-- input de tipo number con un mínimo valor de "0" para que no permita valores negativos-->
         <label for="inputCoins">
-        <h3>Introduce monedas:</h3>
+        <h5>Introduce monedas:</h5>
         </label>
-        <input type="number" min="0" id="inputCoins">&nbsp;&nbsp;
+        
+        <input type="number" min="0" id="inputCoins" class="col-xs-2">&nbsp;&nbsp;
         <!-- botón submitCoins -->
         <button type="button" id="submitCoins" class="btn btn-success">introducir</button>
         <h5>El número actual de monedas es de:</h5>
