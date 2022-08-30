@@ -10,15 +10,11 @@ h1 {
 body {
     height: 60%;
     font-family: 'Montserrat', sans-serif;
-    
+    background-color:aqua;       
+       
 }
 
-.all{
-    background-color: peru;
-}
-
-body nav,
-h1 {
+body nav, h1 {
     margin-left: 2%;
     padding:2%;
 }
@@ -50,8 +46,9 @@ h1 {
     width: 14%;
 }
 
-#section {
+#section, .row {
     text-align: center;
+    padding-left: 10px;
 }
 
 /*caja interior de la sección, que contendrá 3 ítems dispuestos en horizontal*/
