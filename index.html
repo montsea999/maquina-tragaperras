@@ -12,14 +12,15 @@
 
 </head>
 
-<body>
+<body style="background-image: url('./images/fondo.jpg');
+background-repeat: no-repeat;">
     <!--div top1 -->
     
           
-   <div class="container-fluid" id="all">
+   <div class="container-fluid" id="all" style="background-color:transparent;">
         <div class="row">
             <div class="col">
-        <h1><b>T&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;P&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;S</b>
+        <h1><b>S&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;H&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;E</b>
         </h1>
     </div>
        </div>
@@ -30,17 +31,17 @@
     <div class="col">
         <!-- input de tipo number con un mínimo valor de "0" para que no permita valores negativos-->
         <label for="inputCoins">
-            <h5 class="text-warning">coins:</h5>
+            <h5 style="color:peru;" class="h3">coins:</h5>
         </label>        
         <input type="number" min="0" id="inputCoins" class="col-xs-2"  style="width:40px;">&nbsp;&nbsp;
         <!-- botón submitCoins -->
-        <button type="button" id="submitCoins" class="btn btn-success rounded-circle shadow">Insert</button>
+        <button type="button" id="submitCoins" class="btn btn-success rounded-circle shadow">Go!</button>
     </div><div class="col">
-        <h5 class="text-success">Total coins:</h5><h2 id="coins"></h2>
+        <h5 class="text-success" class="h3">Total coins:</h5><h2 id="coins" style="color:peru;" class="h1"></h2>
 </div><div class="col">
 
         <!--botón "exit"-->
-        <button type="button" id="exit" class="btn btn-danger">Salir</button>
+        <button type="button" id="exit" class="btn btn-outline-danger btn-lg">Salir</button>
         
     
 </div>
@@ -74,12 +75,10 @@
     
     <!--Historial de movimientos -->
     <nav id="nav2">
-        <div class="alert alert-dark rounded-0 border-0 border-start border-warning border-5 shadow" role="alert">
+        <div class="alert rounded-0 border-0 border-start border-warning border-5 shadow rounded" style="background:transparent;color:peru;width:50%" role="alert">
             <p class="fs-6 mb-0 d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="16" height="16" viewBox="0 0 20 20" fill="peru">
-                  <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
-              </svg>
-              <span class="text-danger">Historial de movimientos</span>
+              
+              <span class="text-success">Historial de movimientos</span>
           </p>
           <ul id="historyUl" class="text-start">            
         </ul>
