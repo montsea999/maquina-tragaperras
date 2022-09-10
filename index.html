@@ -26,41 +26,42 @@
     </div>
     
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-9">
+ <div class="row mt-3">
+    <div class="col">
         <!-- input de tipo number con un mínimo valor de "0" para que no permita valores negativos-->
         <label for="inputCoins">
-        <h5>Introduce monedas:</h5>
-        </label>
-        
-        <input type="number" min="0" id="inputCoins" class="col-xs-2">&nbsp;&nbsp;
+            <h5 class="text-warning">coins:</h5>
+        </label>        
+        <input type="number" min="0" id="inputCoins" class="col-xs-2"  style="width:40px;">&nbsp;&nbsp;
         <!-- botón submitCoins -->
-        <button type="button" id="submitCoins" class="btn btn-success">introducir</button>
-        <h5>El número actual de monedas es de:</h5>
-        <h2 id="coins"></h2>
+        <button type="button" id="submitCoins" class="btn btn-success rounded-circle shadow">Insert</button>
+    </div><div class="col">
+        <h5 class="text-success">Total coins:</h5><h2 id="coins"></h2>
+</div><div class="col">
+
         <!--botón "exit"-->
         <button type="button" id="exit" class="btn btn-danger">Salir</button>
-        </div>
-    </div>
+        
+    
 </div>
   
         <!--contenedor "section" que tiene un elemento <ul></ul> con 4 contenedores: Los 3 boxes y la palanca-->
-        <div class="container-fluid">
+        <div class="container-fluid mt-5">
             
                 
       <div id="section">
         <ul>                        
-            <div id="boxA" class="box">
+            <div id="boxA" class="box border-0 shadow">
                 <!--cada contenedor box, contiene una imagen, que inicialmente tendrá un src="images/pingu.png" -->
-                <img id="box1" src="images/pingu.png">                
+                <img id="box1" class="img-fluid" src="images/pingu.png">                 
             </div>
             
-            <div id="boxB"class="box">
-                <img id="box2" src="images/pingu.png">
+            <div id="boxB"class="box border-0 shadow">
+                <img id="box2" class="img-fluid" src="images/pingu.png">
             </div>   
 
-            <div id="boxC"class="box">
-                <img id="box3" src="images/pingu.png">
+            <div id="boxC"class="box border-0 shadow">
+                <img id="box3" class="img-fluid" src="images/pingu.png">
             </div> 
             <!--en cambio, el contenedor palanca, contiene una imagen, que inicialmente tendrá un src="images/palancaUP.png" -->
             <div class="palanca">
@@ -73,10 +74,19 @@
     
     <!--Historial de movimientos -->
     <nav id="nav2">
-        <h3>Historial de movimientos</h3>
-        <ul id="historyUl">            
+        <div class="alert alert-dark rounded-0 border-0 border-start border-warning border-5 shadow" role="alert">
+            <p class="fs-6 mb-0 d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="16" height="16" viewBox="0 0 20 20" fill="peru">
+                  <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
+              </svg>
+              <span class="text-danger">Historial de movimientos</span>
+          </p>
+          <ul id="historyUl" class="text-start">            
         </ul>
     </nav>
+        </div>
+    
+    
 </div>
     <script src="javascript.js"></script>
     <script src="js/pooper.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
