@@ -35,7 +35,7 @@
 
         //si coins es 0, hago saltar una alerta con un mensaje, y también llamo a la función addHistory pasándole otro mensaje por parámetro
          if(coins==0){
-                alert("No has introducido monedas. Por favor, introduce monedas. ");
+                swal("No has introducido monedas."," Por favor, introduce monedas.","warning");
                 message="No has podido hacer una tirada porque no has introducido monedas.";
                 addHistory(message);
         } else{
@@ -62,7 +62,7 @@
         function exit() {
 
          // lanza una alerta con un mensaje del total de monedas conseguidas
-        alert("Has conseguido un total de " + coins + " monedas."); 
+        swal("Has conseguido un total de " + coins + " monedas.","","success"); 
 
         // vuelvo a activar tanto el input como el botón "introducir"
         document.getElementById("submitCoins").disabled = false;  
